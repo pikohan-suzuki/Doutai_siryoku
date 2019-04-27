@@ -35,23 +35,27 @@
             android:id="@+id/middle_button" android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/easy_button" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.100000024"
-            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="@+id/easy_button"
+            app:layout_constraintEnd_toEndOf="@+id/easy_button"/>
     <Button
             android:text="Button"
-            android:layout_width="wrap_content"
+            android:layout_width="87dp"
             android:layout_height="wrap_content"
             android:id="@+id/hard_button"
-            tools:layout_editor_absoluteY="487dp" tools:layout_editor_absoluteX="162dp"/>
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/middle_button" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="@+id/middle_button"
+            app:layout_constraintEnd_toEndOf="@+id/middle_button" app:layout_constraintVertical_bias="0.16000003"/>
     <Button
             android:text="Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/custom_button" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/hard_button" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/hard_button"
             android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.19"/>
+            app:layout_constraintVertical_bias="0.19"
+            app:layout_constraintEnd_toEndOf="@+id/hard_button"
+            app:layout_constraintStart_toStartOf="@+id/hard_button"/>
     <Button
             android:text="Button"
             android:layout_width="wrap_content"
@@ -60,5 +64,13 @@
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintTop_toTopOf="@+id/custom_button"
             app:layout_constraintBottom_toBottomOf="@+id/custom_button"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/custom_text" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/custom_button" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="@+id/custom_button"
+            app:layout_constraintEnd_toEndOf="@+id/custom_button"/>
 
 </android.support.constraint.ConstraintLayout>
